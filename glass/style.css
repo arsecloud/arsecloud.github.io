@@ -8,7 +8,7 @@ div.header{background: #333333}
 
 /*шапка*/
 div.topmenu{float: right}
-div.topmenu input{height:55px;
+div.topmenu input:not(.active){height:55px;
     font:14pt Arial , Helvetica, sans-serif;
     color: white;
 	border-color:#333333;
@@ -16,13 +16,13 @@ div.topmenu input{height:55px;
 	border-width:1px;
 	background:#333333;
 	cursor:pointer;}
-	div.topmenu input:hover{border-color:#333333;
+	div.topmenu input:not(.active):hover{border-color:#333333;
 	border-style:solid;
 	border-width:1px;
 	color: #696969;
 	background:#333333;
 	}
-div.topmenu a:hover{color:#A9A9A9;}
+div.topmenu a:hover:not(.active){color:#A9A9A9;}
 div.tit {line-height: 40px; background: #000000;text-align: center;}
 
 
@@ -62,9 +62,11 @@ div.contentPages {background-color:rgba(0,0,0,0.5)}
 div.footer{position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
     padding: 10px; /* Поля вокруг текста */
-    background: #000000; /* Цвет фона */
+    background: #333333; /* Цвет фона */
     color: #fff; /* Цвет текста */
     width: 100%; /* Ширина слоя */};
+    div.footer p{margin-top: 0.1em; /* Отступ сверху */
+    margin-bottom: 0.5em; /* Отступ снизу */}
 
     /*фильмы и раздела что в кино*/
 
