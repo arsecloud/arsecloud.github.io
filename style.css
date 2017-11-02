@@ -44,7 +44,7 @@ div.contentPages {background-color:rgba(0,0,0,0.5)}
 
  div.contentCinemaFilms a{color: #A9A9A9}
  div.contentCinemaFilms {background-color:rgba(0,0,0,0.5)}
- div.contentCinemaFilms td{width: 100%}
+ div.contentCinemaFilms table{width: 100%}
 
 
 div.footer{position: fixed; /* Фиксированное положение */
