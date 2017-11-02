@@ -3,29 +3,31 @@ font: 16px/24px Arial, sans-serif;}
 a{text-decoration: none;}
 
 /*структура*/
-div.mid{width: 1000px;margin: 0 auto}
+div.mid{width: 90%;margin: 0 auto}
 div.header{background: #000000}
 
 /*шапка*/
 div.topmenu{float: right;line-height: 79px}
 div.topmenu a{margin: 0 0 0 30px;color:#FFFFFF;}
 div.topmenu a:hover{color:#A9A9A9;}
-div.tit {line-height: 40px; background: #000000;text-align: center;}
+div.tit {line-height: 200%; background: #000000;text-align: center;margin-bottom: -25px}
 
 
 /*тело*/
 /*cinema*/
 div.contentcinema{background-color:rgba(0,0,0,0.5);}
 div.contentcinema img:hover{opacity: 0.5}
-div.contentcinema img{margin: 0 0 0 60px;color:#FFFFFF;}
-div.contentcinema a{margin: 0 0 0 30px;color:#FFFFFF;}
-div.contentcinema a:hover{color: #A9A9A9}
+div.contentcinema td{width: 25%}
+div.contentcinema table{width: 100%}
 
 /*index*/
  div.contentMain{background-color:rgba(0,0,0,0.5);}
  div.contentMain img{float: left}
  div.contentMain a:hover{color: #A9A9A9}
 div.contentMain a{color:#FFFFFF}
+div.contentMain table{width: 100%}
+div.contentMain td{width: 25%}
+
 
 
 
@@ -42,7 +44,7 @@ div.contentPages {background-color:rgba(0,0,0,0.5)}
 
  div.contentCinemaFilms a{color: #A9A9A9}
  div.contentCinemaFilms {background-color:rgba(0,0,0,0.5)}
- div.contentCinemaFilms td{height: 10px}
+ div.contentCinemaFilms td{width: 100%}
 
 
 div.footer{position: fixed; /* Фиксированное положение */
@@ -54,11 +56,4 @@ div.footer{position: fixed; /* Фиксированное положение */
 
     /*фильмы и раздела что в кино*/
 
-
-
-
-
-
-
-
-
+  
