@@ -3,9 +3,8 @@ font: 16px/24px Arial, sans-serif;}
 a{text-decoration: none;}
 
 /*структура*/
-div.mid{width: 90%;margin: 0 auto}
+div.mid{width: 90%; margin: 0 auto}
 div.header{background: #000000}
-
 /*шапка*/
 div.topmenu{float: right;line-height: 79px}
 div.topmenu a{margin: 0 0 0 30px;color:#FFFFFF;}
@@ -17,7 +16,7 @@ div.tit {line-height: 200%; background: #000000;text-align: center;margin-bottom
 /*cinema*/
 div.contentcinema{background-color:rgba(0,0,0,0.5);}
 div.contentcinema img:hover{opacity: 0.5}
-div.contentcinema td{width: 25%}
+div.contentcinema td{width: 50%}
 div.contentcinema table{width: 100%}
 
 /*index*/
