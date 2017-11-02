@@ -46,7 +46,10 @@ div.contentPages {background-color:rgba(0,0,0,0.5)}
  div.contentCinemaFilms {background-color:rgba(0,0,0,0.5)}
  div.contentCinemaFilms table{width: 100%;width: 100%}
  div.contentCinemaFilms img{max-width: 50% ; height: auto}
-
+div.contentCinemaFilms hr{ border: none; /* Убираем границу */
+    background-color: black; /* Цвет линии */
+    color: black; /* Цвет линии для IE6-7 */
+    height: 6px; /* Толщина линии */}
 
 div.footer{position: fixed; /* Фиксированное положение */
     left: 0; bottom: 0; /* Левый нижний угол */
