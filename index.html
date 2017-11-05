@@ -28,16 +28,51 @@
 </div>
 <div class="mid">
 	<div class="contentMain">
-		<table border="2px">
+		<table>
 			<tr>
-				<td><a href="FilmInfo/itcinema.html"><img src = "FilmInfo/images/cinema/it/it.jpg" width="100%" class="rightimg" ></a></td>
-				<td>textБиблиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API д</td>
+				<td><select id="category"></select></td>
+				<td><select id="country"></select></td>
 				
-				<td><a href="FilmInfo/itcinema.html"><img src = "FilmInfo/images/cinema/it/it.jpg" width="100%" class="rightimg" ></a>	
-							</td>
-<td>textБиблиотека JavaScript, фокусирующаяся на взаимодействии JavaScript и HTML. Библиотека jQuery помогает легко получать доступ к любому элементу DOM, обращаться к атрибутам и содержимому элементов DOM, манипулировать ими. Также библиотека jQuery предоставляет удобный API д</td>
-							</tr>
+				<td><select id="year"></select></td>
+				<td><input type="button" id="button" value="Зарандомить" /></td>
+			</tr>
 		</table>
+
+		<script type="text/javascript">
+
+var objSel1 = document.getElementById("category");
+objSel1.options[0] = new Option("Категории", "str0");
+objSel1.options[1] = new Option("Комедия", "str1");
+objSel1.options[2] = new Option("Биография", "str2");
+
+var objSel2 = document.getElementById("country");
+objSel2.options[0] = new Option("Страна", "str0");
+objSel2.options[1] = new Option("Россия", "str1");
+objSel2.options[2] = new Option("Сша", "str2");
+
+var objSel3 = document.getElementById("year");
+objSel3.options[0] = new Option("Год", "str0");
+objSel3.options[1] = new Option("2015-2018", "str1");
+objSel3.options[2] = new Option("2010-2015", "str2");
+
+
+button.onclick = function() {
+	alert("Приветики,а теперь вали ,пельмень")
+/*if ( objSel.selectedIndex ==0)
+{
+	var a = 100;
+
+	alert(Math.floor(Math.random() * (a - 1 + 1)) + 1);
+  //Если есть выбранный элемент, отобразить его значение (свойство value)
+ // alert(objSel.options[objSel.selectedIndex].value);
+
+}
+if( objSel.selectedIndex ==1){
+	alert(horror);
+  };*/
+}
+
+</script>
 	</div>
 </div>
 
