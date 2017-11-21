@@ -1,0 +1,3 @@
+CREATE TABLE random(id INTEGER PRIMARY KEY AUTOINCREMENT , name TEXT NOT NULL, about TEXT NOT NULL, imageway TEXT NOT NULL, video TEXT NOT NULL);
+INSERT INTO random(id,name,about,imageway,video)
+VALUES(1,'босс молокосос','петух','собака','пес');

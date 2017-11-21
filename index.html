@@ -71,8 +71,15 @@ if( objSel.selectedIndex ==1){
 	alert(horror);
   };*/
 }
-
-</script>
+db=openDatabase("SQLite/randomfilm.bd3","0.1","randomfilm",2000000);
+if(!db){
+	alert("Failed");
+}
+db.transaction(function(tx) {
+tx.executeSql("SELECT * FROM random WHERE id = '1'", [], function(tx, result) {
+for(var i = 0; i < result.rows.length; i++) {
+document.write('<b>' + result.rows.item(i)['text'] + '</b><br />');
+}}, null)}); </script>
 	</div>
 </div>
 
