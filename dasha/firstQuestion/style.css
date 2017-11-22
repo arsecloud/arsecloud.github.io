@@ -1,8 +1,15 @@
 body{background-color: #6b383f;width: 90%;margin: 0 auto;color: white}
-div.Zagolovok h2 {text-align: center;color: white}
+div.Zagolovok h2 {text-align: center;color: white;font: 16px/24px Arial}
+div.content{font: 14px/18px Verdana}
 div.contentIndex p{text-align: center;}
 div.contentIndex a{text-decoration: none; color: white}
 div.contentAboutMe p{text-align: left;width: 80%;}
 div.contentMyFamily p{ text-align: right;width: 80%;}
 div.contentFriends p{text-align: center;width: 80%; }
-div.contentleisure p{width: 80%;}
+div.contentLeisure p{width: 80%;}
+div.imageLeisure{text-align: center;}
+div.imageAbout{text-align: left;}
+div.imageFriends{text-align: right;}
+div.imageMyFam{text-align: center;}
+
+
