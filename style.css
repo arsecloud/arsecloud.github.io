@@ -21,13 +21,11 @@ div.contentcinema table{width: 100%}
 
 /*index*/
  div.contentMain{background-color:rgba(0,0,0,0.5);}
- div.contentMain img{float: left}
  div.contentMain a:hover{color: #A9A9A9}
-div.contentMain a{color:#FFFFFF}
+div.contentMain a{color:#FFFFFF;text-decoration: none}
 div.contentMain table{width: 100%}
-div.contentMain td{width: 25%}
-div.contentMain select{width: 100%;background-color:rgba(0,0,0,0.5);color: white}
-div.contentMain input{width: 100%;background-color:rgba(0,0,0,0.5);color: white}
+div.contentMain input{background-color:rgba(0,0,0,0.5);color: white;width: 60%}
+div.contentMain h2{text-align: center ;background-color:rgba(0,0,0,1)}
 
 
 
@@ -61,4 +59,11 @@ div.footer{position: fixed; /* Фиксированное положение */
 
     /*фильмы и раздела что в кино*/
 
-  
+div.contentMain input{margin-top: 1px}
+
+
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width:100%;
+      margin: auto;
+  }
