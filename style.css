@@ -23,7 +23,7 @@ div.contentcinema table{width: 100%}
  div.contentMain{background-color:rgba(0,0,0,0.5);}
  div.contentMain a:hover{color: #A9A9A9}
 div.contentMain a{color:#FFFFFF;text-decoration: none}
-div.contentMain table{width: 100%}
+div.contentMain table{width: 80%;text-align: center;}
 div.contentMain input{background-color:rgba(0,0,0,0.5);color: white;width: 60%}
 div.contentMain h2{text-align: center ;background-color:rgba(0,0,0,1)}
 
