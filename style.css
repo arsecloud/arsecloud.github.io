@@ -6,12 +6,17 @@ a{text-decoration: none;}
 div.mid{width: 90%; margin: 0 auto}
 div.header{background: #000000}
 /*шапка*/
-div.topmenu{float: right;line-height: 79px}
+div.topmenu input{height: 30px}
+
+
+div.topmenu {float: right;line-height: 79px}
 div.topmenu a{margin: 0 0 0 30px;color:#FFFFFF;}
 div.topmenu a:hover{color:#A9A9A9;}
 div.tit {line-height: 200%; background: #000000;text-align: center;margin-bottom: -25px}
-
-
+div.search{text-align: center;}
+div.search a{margin: 0 0 0 30px;color:#FFFFFF;}
+div.search a:hover{color:#A9A9A9;}
+div.search h2{text-align: center ;background-color:rgba(0,0,0,1)}
 /*тело*/
 /*cinema*/
 div.contentcinema{background-color:rgba(0,0,0,0.5);}
