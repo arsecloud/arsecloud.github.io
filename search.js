@@ -26,11 +26,19 @@
 
 
 
-submit.onclick = function sear(){
-	var text = document.getElementById('TextIn').value;
 
 
+var Inp= document.getElementById('TextIn');
+Inp.oninput=function fgjng(){
+		Search();
 
+	
+}
+
+function Search(){
+	notfound=0;
+
+var text = document.getElementById('TextIn').value;
 	var film11="Малыш на драйве";
 	var pos=0;
 	var val = 0;
@@ -43,10 +51,15 @@ submit.onclick = function sear(){
 					table.appendChild(tr1);}
 	
 
-					
+if(text==''){
+	text='1111111111111111111111111111111111';
+	table.removeChild(tr1);
+	tit=0;
+	notfound=1;
+}
 
+	if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
 
-	if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
 					if(film1==0){
 
 
@@ -69,7 +82,8 @@ submit.onclick = function sear(){
 
 film11="Твоё имя";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film2==0){
 											tr3.innerHTML = '<td><a href="Categories/all/yourname.html">Твоё имя</a></td><td><a href="Categories/all/yourname.html"><img width="10%" src = "Categories/all/images/yourname.jpg"></a></td>';
 
@@ -93,7 +107,8 @@ film11="Твоё имя";
 
 	film11="Заклятие";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film3==0){
 					tr4.innerHTML = '<tr><td><a href="Categories/all/zak.html">Заклятие</a></td><td><a href="Categories/all/zak.html"><img width="10%" src = "Categories/all/images/zak.jpg"></a></td></tr>';
 
@@ -114,7 +129,8 @@ film11="Твоё имя";
 
 film11="Босс молокосос";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film4==0){
 					tr5.innerHTML = '<tr><td><a href="Categories/all/boss.html">Босс молокосос</a></td><td><a href="Categories/all/boss.html"><img width="10%" src = "Categories/all/images/boss.jpg"></a></td></tr>';
 
@@ -137,7 +153,8 @@ film11="Босс молокосос";
 
 film11="Ходячий замок";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film5==0){
 					tr6.innerHTML = '<tr><td><a href="Categories/all/castle.html">Ходячий замок</a></td><td><a href="Categories/all/castle.html"><img width="10%" src = "Categories/all/images/castle.jpg"></a></td></tr>';
 
@@ -159,7 +176,8 @@ film11="Ходячий замок";
 
 film11="Стражи галактики";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film7==0){
 					tr7.innerHTML = '<tr><td><a href="Categories/all/galaxy.html">Стражи галактики</a></td><td><a href="Categories/all/galaxy.html"><img width="10%" src = "Categories/all/images/galaxy.jpg"></a></td></tr>';
 
@@ -180,7 +198,8 @@ film11="Стражи галактики";
 
 	film11="Игры разума";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film8==0){
 					tr8.innerHTML = '<tr><td><a href="Categories/all/gamerazum.html">Игры разума</a></td><td><a href="Categories/all/gamerazum.html"><img width="10%" src = "Categories/all/images/gamerazum.jpg"></a></td></tr>';
 
@@ -204,7 +223,8 @@ film11="Стражи галактики";
 
 		film11="Холодное сердце";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film9==0){
 					tr9.innerHTML = '<tr><td><a href="Categories/all/heart.html">Холодное сердце</a></td><td><a href="Categories/all/heart.html"><img width="10%" src = "Categories/all/images/heart.jpg"></a></td></tr>';
 
@@ -230,7 +250,8 @@ film11="Стражи галактики";
 
 film11="Хижина в лесу";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film10==0){
 
 					tr10.innerHTML = '<tr><td><a href="Categories/all/house.html">Хижина в лесу</a></td><td><a href="Categories/all/house.html"><img width="10%" src = "Categories/all/images/house.jpg"></a></td></tr>';
@@ -255,7 +276,8 @@ film11="Хижина в лесу";
 
 film11="Кингсман";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film11==0){
 
 					tr11.innerHTML = '<tr><td><a href="Categories/all/kingsman.html">Кингсман</a></td><td><a href="Categories/all/kingsman.html"><img width="10%" src = "Categories/all/images/kingsman.jpg"></a></td></tr>';
@@ -279,7 +301,8 @@ film11="Кингсман";
 
 film11="Оно";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film12==0){
 
 					tr12.innerHTML = '<tr><td><a href="Categories/all/itcinema.html">Оно</a></td><td><a href="Categories/all/itcinema.html"><img width="10%" src = "Categories/all/images/it.jpg"></a></td></tr>';
@@ -303,7 +326,8 @@ film11="Оно";
 
 	film11="Легенда №17";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film13==0){
 					tr13.innerHTML = '<tr><td><a href="Categories/all/legend.html">Легенда №17</a></td><td><a href="Categories/all/legend.html"><img width="10%" src = "Categories/all/images/legend.jpg"></a></td></tr>';
 
@@ -327,7 +351,8 @@ film11="Оно";
 
 	film11="Логан";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film14==0){
 					tr14.innerHTML = '<tr><td><a href="Categories/all/logan.html">Логан</a></td><td><a href="Categories/all/logan.html"><img width="10%" src = "Categories/all/images/logan.jpg"></a></td></tr>';
 
@@ -350,7 +375,8 @@ film11="Оно";
 
 	film11="Спасатели малибу";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film15==0){
 					tr15.innerHTML = '<tr><td><a href="Categories/all/malibu.html">Спасатели малибу</a></td><td><a href="Categories/all/malibu.html"><img width="10%" src = "Categories/all/images/malibu.jpg"></a></td></tr>';
 
@@ -373,7 +399,8 @@ film11="Оно";
 
 	film11="Сосед по имени Тороро";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film16==0){
 
 					tr16.innerHTML = '<tr><td><a href="Categories/all/neighbor.html">Сосед по имени Тороро</a></td><td><a href="Categories/all/neighbor.html"><img width="10%" src = "Categories/all/images/neighbor.jpg"></a></td></tr>';
@@ -397,7 +424,8 @@ film11="Оно";
 
 	film11="Унесённая призраками";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film17==0){
 
 					tr17.innerHTML = '<tr><td><a href="Categories/all/prizrakami.html">Унесённая призраками</a></td><td><a href="Categories/all/prizrakami.html"><img width="10%" src = "Categories/all/images/prizrakami.jpg"></a></td></tr>';
@@ -422,7 +450,8 @@ film11="Оно";
 
 	film11="Разум в огне";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film18==0){
 					tr18.innerHTML = '<tr><td><a href="Categories/all/razuminfire.html">Разум в огне</a></td><td><a href="Categories/all/razuminfire.html"><img width="10%" src = "Categories/all/images/razuminfire.jpg"></a></td></tr>';
 
@@ -446,7 +475,8 @@ film11="Оно";
 
 	film11="Тайна";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film19==0){
 					tr19.innerHTML = '<tr><td><a href="Categories/all/secret.html">Тайна</a></td><td><a href="Categories/all/secret.html"><img width="10%" src = "Categories/all/images/secret.jpg"></a></td></tr>';
 
@@ -471,7 +501,8 @@ film11="Оно";
 
 	film11="Список Шиндлера";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film20==0){
 
 					tr20.innerHTML = '<tr><td><a href="Categories/all/spisok.html">Список Шиндлера</a></td><td><a href="Categories/all/spisok.html"><img width="10%" src = "Categories/all/images/spisok.jpg"></a></td></tr>';
@@ -496,7 +527,8 @@ film11="Оно";
 
 	film11="Дух времени";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film21==0){
 					tr21.innerHTML = '<tr><td><a href="Categories/all/soul.html">Дух времени</a></td><td><a href="Categories/all/soul.html"><img width="10%" src = "Categories/all/images/soul.jpg"></a></td></tr>';
 
@@ -521,7 +553,8 @@ film11="Оно";
 
 	film11="Путешествие времени";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film22==0){
 					tr22.innerHTML = '<tr><td><a href="Categories/all/travel.html">Путешествие времени</a></td><td><a href="Categories/all/travel.html"><img width="10%" src = "Categories/all/images/travel.jpg"></a></td></tr>';
 
@@ -545,7 +578,8 @@ film11="Оно";
 
 	film11="Отряд самоубийц";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film23==0){
 					tr23.innerHTML = '<tr><td><a href="Categories/all/squade.html">Отряд самоубийц</a></td><td><a href="Categories/all/squade.html"><img width="10%" src = "Categories/all/images/squade.jpg"></a></td></tr>';
 
@@ -569,7 +603,8 @@ film11="Оно";
 
 	film11="Титаник";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film24==0){
 					tr24.innerHTML = '<tr><td><a href="Categories/all/titanic.html">Титаник</a></td><td><a href="Categories/all/titanic.html"><img width="10%" src = "Categories/all/images/titanic.jpg"></a></td></tr>';
 
@@ -594,7 +629,8 @@ film11="Оно";
 
 	film11="Чужой: завет";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film25==0){
 
 					tr25.innerHTML = '<tr><td><a href="Categories/all/alienzavet.html">Чужой: завет</a></td><td><a href="Categories/all/alienzavet.html"><img width="10%" src = "Categories/all/images/alienzavet.jpg"></a></td></tr>';
@@ -619,7 +655,8 @@ film11="Оно";
 
 	film11="Путешествие на край вселенной";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film26==0){
 
 					tr26.innerHTML = '<tr><td><a href="Categories/all/travelgalaxy.html">Путешествие на край вселенной</a></td><td><a href="Categories/all/travelgalaxy.html"><img width="10%" src = "Categories/all/images/travelgalaxy.jpg"></a></td></tr>';
@@ -645,7 +682,8 @@ film11="Оно";
 
 	film11="Камера, мотор, убийства";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film27==0){
 
 					tr27.innerHTML = '<tr><td><a href="Categories/all/cameramotor.html">Камера, мотор, убийства</a></td><td><a href="Categories/all/cameramotor.html"><img width="10%" src = "Categories/all/images/cameramotor.jpg"></a></td></tr>';
@@ -670,7 +708,8 @@ film11="Оно";
 
 	film11="Тёмная башня";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film28==0){
 					tr28.innerHTML = '<tr><td><a href="Categories/all/tower.html">Тёмная башня</a></td><td><a href="Categories/all/tower.html"><img width="10%" src = "Categories/all/images/tower.jpg"></a></td></tr>';
 
@@ -694,7 +733,8 @@ film11="Оно";
 
 	film11="Проклятье Аннабель";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film29==0){
 					tr29.innerHTML = '<tr><td><a href="Categories/all/annabel.html">Проклятье Аннабель</a></td><td><a href="Categories/all/annabel.html"><img width="10%" src = "Categories/all/images/annabel.jpg"></a></td></tr>';
 
@@ -718,7 +758,8 @@ film11="Оно";
 
 	film11="Лекарство от жизни";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film30==0){
 
 					tr30.innerHTML = '<tr><td><a href="Categories/all/lekarstvo.html">Лекарство от жизни</a></td><td><a href="Categories/all/lekarstvo.html"><img width="10%" src = "Categories/all/images/lekarstvo.jpg"></a></td></tr>';
@@ -743,7 +784,8 @@ film11="Оно";
 
 	film11="Пила: Игра на выживание";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film31==0){
 
 					tr31.innerHTML = '<tr><td><a href="Categories/all/pilaigra.html">Пила: Игра на выживание</a></td><td><a href="Categories/all/pilaigra.html"><img width="10%" src = "Categories/all/images/pilagame.jpg"></a></td></tr>';
@@ -768,7 +810,8 @@ film11="Оно";
 
 	film11="Живое";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film32==0){
 
 					tr32.innerHTML = '<tr><td><a href="Categories/all/zhivoe.html">Живое</a></td><td><a href="Categories/all/zhivoe.html"><img width="10%" src = "Categories/all/images/zhivoe.jpg"></a></td></tr>';
@@ -793,7 +836,8 @@ film11="Оно";
 
 	film11="Культ Чаки";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film33==0){
 
 					tr33.innerHTML = '<tr><td><a href="Categories/all/cultchaki.html">Культ Чаки</a></td><td><a href="Categories/all/cultchaki.html"><img width="10%" src = "Categories/all/images/cultchaki.jpg"></a></td></tr>';
@@ -818,7 +862,8 @@ film11="Оно";
 
 	film11="Форма голоса";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film34==0){
 
 					tr34.innerHTML = '<tr><td><a href="Categories/all/formagolosa.html">Форма голоса</a></td><td><a href="Categories/all/formagolosa.html"><img width="10%" src = "Categories/all/images/formagolosa.jpg"></a></td></tr>';
@@ -843,7 +888,8 @@ film11="Оно";
 
 	film11="5 сантиметров в секунду";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film35==0){
 
 					tr35.innerHTML = '<tr><td><a href="Categories/all/5sm.html">5 сантиметров в секунду</a></td><td><a href="Categories/all/5sm.html"><img width="10%" src = "Categories/all/images/5sm.jpg"></a></td></tr>';
@@ -868,7 +914,8 @@ film11="Оно";
 
 	film11="Шёпот";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film36==0){
 
 					tr36.innerHTML = '<tr><td><a href="Categories/all/shepot.html">Шёпот</a></td><td><a href="Categories/all/shepot.html"><img width="10%" src = "Categories/all/images/shepot.jpg"></a></td></tr>';
@@ -892,7 +939,8 @@ film11="Оно";
 
 	film11="Ветер крепчает";
 
-		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){
+		if(film11.toUpperCase().indexOf(text.toUpperCase())!=-1){					notfound=1;
+
 					if(film37==0){
 					tr37.innerHTML = '<tr><td><a href="Categories/all/veter.html">Ветер крепчает</a></td><td><a href="Categories/all/veter.html"><img width="10%" src = "Categories/all/images/veter.jpg"></a></td></tr>';
 
@@ -917,9 +965,18 @@ film11="Оно";
 if(notfound==0){
 					tr38.innerHTML = '<tr><td><h3>Ничего не найдено</h3></td></tr>';
 										table.appendChild(tr38);
-}
-else{
-				table.removeChild(tr38);
+											table.removeChild(tr1);
+											tit=0;
+
 
 }
+if(notfound==1){
+											table.removeChild(tr38);
+
+}
+
+}
+
+submit.onclick = function sear(){
+	Search();
 }
