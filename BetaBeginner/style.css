@@ -11,7 +11,7 @@
   /*структура*/
   div.mid{width: 100%; margin: 0 auto;}
   div.midS{width: 100%;margin: 0 auto;}
-  div.header{background: #2D2D2D;}
+  div.header{background: #2D2D2D;width: 100%}
   div.header img{width: 30%}
 
   /*шапка*/
