@@ -19,7 +19,7 @@
 
   div.topmenu {float: right;color: black;width: 30%}
   div.topmenu a{display: inline-block;box-sizing: border-box;color: #2D2D2D;
-    border-radius: 30px;background-color: black;width: 60%;text-align: center; position: relative;
+    border-radius: 30px;background-color: #FFF;width: 60%;text-align: center; position: relative;
 margin: 10%
   }
   div.topmenu a:hover {
