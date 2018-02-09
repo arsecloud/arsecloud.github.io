@@ -4,24 +4,20 @@
 
 
   body{background:#FFF; margin: 0;padding: 0;
-  font: 16px/24px Arial, sans-serif;}
+  font: 16px/24px Arial, sans-serif; width: 100%}
   a{text-decoration: none;}
 
 
   /*структура*/
-  div.mid{width: 100%; margin: 0 auto;}
-  div.midS{width: 100%;margin: 0 auto;}
+  div.mid{width: 100%}
+  div.midS{width: 100%}
   div.header{background: #2D2D2D;width: 100%}
   div.header img{width: 30%}
 
   /*шапка*/
 
 
-  div.topmenu {float: right;color: black;width: 30%}
-  div.topmenu a{display: inline-block;box-sizing: border-box;color: #2D2D2D;
-    border-radius: 30px;background-color: #FFF;width: 60%;text-align: center; position: relative;
-margin: 10%
-  }
+
   div.topmenu a:hover {
   background:#cc4e5c;
   }
