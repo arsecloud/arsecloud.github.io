@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 600px) {
   /* specific CSS */
 
 
@@ -28,12 +28,6 @@ margin: 10%
   div.DoneForm {line-height: 30px}
 
 
-  div.DoneForm a{display: inline-block;
-    color: #2D2D2D;border-radius: 30px;background-color: #cc4e5c;width: 130px;height: 30px;text-align: center; position: relative;
-  margin: 13px; border-color:#2D2D2D; border: 2px;}
-  div.DoneForm a:hover {
-  background:#D0D0D0;
-  }
 
 
 
@@ -55,7 +49,7 @@ margin: 10%
 
   div.register {width: 100% ;margin: 0 auto;height: 100%
     ;}
-    div.register table{width: 100%; 	border-spacing: 15px;
+    div.register table{width: 70%; 	border-spacing: 15px;
   }
     div.register caption{font: 12px/16px Arial;margin-bottom: 10px;}
 
@@ -123,7 +117,7 @@ margin: 10%
 
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 601px) {
 
   body{background:#FFF; margin: 0;padding: 0;
   font: 16px/24px Arial, sans-serif;}
