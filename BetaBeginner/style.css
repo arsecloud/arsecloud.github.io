@@ -17,7 +17,11 @@
   /*шапка*/
 
 
-
+  div.topmenu {float: right;color: black;width: 30%}
+  div.topmenu a{display: inline-block;box-sizing: border-box;color: #2D2D2D;
+    border-radius: 30px;background-color: #FFF;width: 60%;text-align: center; position: relative;
+margin: 10%
+  }
   div.topmenu a:hover {
   background:#cc4e5c;
   }
@@ -43,9 +47,10 @@
 
 
   div.register {width: 100% ;}
-    div.register table{width: 100%; 	border-spacing: 15px
+    div.register table{width: 100%; 	border-spacing: -15px
   }
     div.register caption{font: 20px/25px Arial;margin-bottom: 10px;}
+
 
 
     .radio input {
