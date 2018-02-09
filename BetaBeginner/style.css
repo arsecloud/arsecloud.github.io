@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
   /* specific CSS */
 
 
@@ -25,7 +25,7 @@
 
   div.topmenu {float: right;line-height: 30px;color: black}
   div.topmenu a{display: inline-block;box-sizing: border-box;color: #2D2D2D;
-    border-radius: 30px;background-color: #FFF;width: 130px;height: 30px;text-align: center; position: relative;
+    border-radius: 30px;background-color: black;width: 130px;height: 30px;text-align: center; position: relative;
   margin: 13px;
 
   }
