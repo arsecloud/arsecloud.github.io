@@ -4,6 +4,7 @@
 <title>РЕГИСТРАЦИЯ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <link rel="shortcut icon" type="image/x-icon" href="images/logo.bmp">
 <link rel="stylesheet" type="text/css" href="style.css" >
   <link rel="stylesheet" href="st.css">
@@ -19,7 +20,7 @@
 	<div class="header">
 		<div class="mid">
 			<header >
-        <img src="images/LOGOHEAD.png" alt="FilmNews" valign="bottom">
+        <img src="images/LOGOHEAD.png" alt="FilmNews" width="13%" valign="bottom">
         <div class="topmenu">
           <a href="#">Назад</a>
 				</div>
@@ -27,51 +28,75 @@
 		</div>
 	</div>
 
+<div class="Check">
+  <h3 align="center">Регистрация</h3>
+  <p>
+<table width="100%">
+    <tr>
+      <td align="center">
+        <label class="radio">
+            <input type="radio" name="radio-st" onClick="show(0)" checked="checked"/>
+            <div class="radio__text">Студент</div>
+          </label>
+      </td>
+      <td align="center">
+        <label class="radio">
+            <input type="radio" name="radio-st" value="2" onClick="show(1)"/>
+            <div class="radio__text">Работодатель</div>
+          </label>
+      </td>
+    </tr>
+
+
+
+
+</table>
+</div>
+<p>
 <div class="register" align="center">
 
-<table>
-  <caption>Регистрация</caption>
-  <tr>
-    <td align="center" width="50%" >
-      <label class="radio">
-          <input type="radio" name="radio-st" onClick="show(0)" checked="checked"/>
-          <div class="radio__text">Студент</div>
-        </label>
-    </td>
-    <td align="center">
-      <label class="radio">
-          <input type="radio" name="radio-st" value="2" onClick="show(1)"/>
-          <div class="radio__text">Работодатель</div>
-        </label>
-    </td>
-  </tr>
-
-
+<table >
+  <tbody id="table">
+    <tr>
+        <td align="center">
+            <input    onchange="setMail()"  type="text" id="post" placeholder="Электронная почта"/>
+        </td>
+        <td align="center">
+           <input  id="phone" name="phone" class="phone"  type="text"  onchange="setTelephone()" placeholder="Номер телефона"/>
+        </td>
+	</tr>
+ 	<tr>
+        <td align="center">
+             <input    onchange="setPass()" type="password" id="parol1" placeholder="Пароль"/>
+        </td>
+        <td align="center">
+            <input    onchange="setPass()"  type="password" id="parol2" placeholder="Подтвердите пароль"/>
+        </td>
+    </tr>
+  </tbody>
 </table>
 
 
-<table id="table">
-<tr>
-<td align="center">
-<input    onchange="setMail()"  type="text" id="post" placeholder="Электронная почта"/>
-</td>
-<td align="center">
-  <input  id="phone" name="phone" class="phone"  type="text"  onchange="setTelephone()" placeholder="Номер телефона"/>
-</td>
 
-</tr>
 
-<tr>
-<td align="center">
-  <input    onchange="setPass()" type="password" id="parol1" placeholder="Пароль"/>
-</td>
-<td align="center">
-  <input    onchange="setPass()"  type="password" id="parol2" placeholder="Подтвердите пароль"/>
-</td>
 
-</tr>
 
-</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
