@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>ГЛАВНАЯ</title>
+<title>Beginner</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <link rel="shortcut icon" type="image/x-icon" href="images/logo.bmp">
 <link rel="stylesheet" type="text/css" href="style.css" >
-  <link rel="stylesheet" href="st.css">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/cs-select.css" />
+  <link rel="stylesheet" type="text/css" href="css/cs-skin-overlay.css" />
   <script src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
 </head>
 <body style="color:black;">
 	<div class="header">
 		<div class="mid">
 			<header >
-        <img src="images/LOGOHEAD.png" alt="FilmNews" width="13%" valign="bottom ">
+        <a href="#" style="cursor: pointer"><img src="images/LOGOHEAD.png" alt="FilmNews" valign="bottom "></a>
         <div class="topmenu">
-          <a href="#">Войти</a>
+          <table >
+          <tr>
+            <td ><a href="#">Я работодатель</a></td>
+            <td><a href="login.html">Войти</a></td>
+
+        </tr>
+        </table>
 				</div>
 			</header>
 		</div>
@@ -27,32 +36,80 @@
 
         <tr>
 
-          <td width="35%" >
-            <a href="#">Я работодатель</a>
+          <td width="2%" >
 
           </td>
 
-          <td width = "40%">
+          <td width = "76%">
             <div class="hyb">
             <input  id="TextIn"  type="text" placeholder="Введите" />
           </div>
           </td>
-          <td width = "25%">
-            <input id="submit" type="image" src="images/findbut.png" align="left">
-            <input id="settings" type="image" src="images/setbut.bmp" >
+          <td width = "6%"  class="mobile">
+            <input id="submit" type="image" src="images/findbut.png" align="left" style="cursor: pointer">
           </td>
+          <td width = "6%"  class="mobile">
+            <input id="settings" type="image" src="images/setbut.png" style="cursor: pointer" align="left">
+          </td>
+          <td width="10%">
+            <section>
+              <select class="cs-select cs-skin-overlay">
+                <option value="" disabled selected>Город</option>
+                <optgroup >
+                  <option value="1">Москва</option>
+                  <option value="2">Санкт-Петербург</option>
+                  <option value="3">Новосибирск</option>
+                  <option value="4">Екатеринбург</option>
+                  <option value="5">Самара</option>
+                  <option value="6">Ростов-на-Дону	</option>
+                  <option value="7">Уфа</option>
+                  <option value="8">Красноярск</option>
+
+
+                </optgroup>
+                <optgroup >
+
+                  <option value="5">Нижний Новгород</option>
+                  <option value="6">Казань</option>
+                  <option value="7">Челябинск</option>
+                  <option value="8">Омск</option>
+                  <option value="5">Пермь</option>
+                  <option value="5">Воронеж</option>
+                  <option value="5">Волгоград</option>
+                  <option value="5">Другой город</option>
+
+                </optgroup>
+
+
+              </select>
+            </section>
+          </td>
+
+          <script src="js/classie.js"></script>
+          <script src="js/selectFx.js"></script>
+          <script>
+            (function() {
+              [].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+                new SelectFx(el, {
+                  stickyPlaceholder: false
+                });
+              } );
+            })();
+          </script>
+
 
 
 
         </tr>
+
       </table>
+
 </div>
 <hr>
 <div class="main">
 <table>
   <tr>
     <td width="75%">
-      Будьте первым кто добавит свое объявление
     </td>
     <td width="25%">
 
